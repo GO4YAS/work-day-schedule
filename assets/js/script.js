@@ -65,3 +65,117 @@ var auditTime = function () {
     else {
         $("#timeblock10").addClass("future");
     }
+    // Audit hour 11 and set color
+    if (moment().isBetween(hour11, hour12)) {
+        $("#timeblock11").addClass("present");
+    }
+    else if (moment().isAfter(hour12)) {
+        $("#timeblock11").addClass("past");
+    }
+    else {
+        $("#timeblock11").addClass("future");
+    }
+
+    // Audit hour 12 and set color
+    if (moment().isBetween(hour12, hour13)) {
+        $("#timeblock12").addClass("present");
+    }
+    else if (moment().isAfter(hour13)) {
+        $("#timeblock12").addClass("past");
+    }
+    else {
+        $("#timeblock12").addClass("future");
+    }
+
+    // Audit hour 13 and set color
+    if (moment().isBetween(hour13, hour14)) {
+        $("#timeblock13").addClass("present");
+    }
+    else if (moment().isAfter(hour14)) {
+        $("#timeblock13").addClass("past");
+    }
+    else {
+        $("#timeblock13").addClass("future");
+    }
+
+    // Audit hour 14 and set color
+    if (moment().isBetween(hour14, hour15)) {
+        $("#timeblock14").addClass("present");
+    }
+    else if (moment().isAfter(hour15)) {
+        $("#timeblock14").addClass("past");
+    }
+    else {
+        $("#timeblock14").addClass("future");
+    }
+
+    // Audit hour 15 and set color
+    if (moment().isBetween(hour15, hour16)) {
+        $("#timeblock15").addClass("present");
+    }
+    else if (moment().isAfter(hour16)) {
+        $("#timeblock15").addClass("past");
+    }
+    else {
+        $("#timeblock15").addClass("future");
+    }
+
+    // Audit hour 16 and set color
+    if (moment().isBetween(hour16, hour17)) {
+        $("#timeblock16").addClass("present");
+    }
+    else if (moment().isAfter(hour17)) {
+        $("#timeblock16").addClass("past");
+    }
+    else {
+        $("#timeblock16").addClass("future");
+    }
+
+    // Audit hour 17 and set color
+    if (moment().isBetween(hour17, hour18)) {
+        $("#timeblock17").addClass("present");
+    }
+    else if (moment().isAfter(hour18)) {
+        $("#timeblock17").addClass("past");
+    }
+    else {
+        $("#timeblock17").addClass("future");
+    };
+}
+// End Audit Timeblock
+
+
+
+// Add delete event function for each time block
+$("#save-delete9").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour9");
+    $("#eventblock9").val("");
+})
+$("#save-delete10").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour10");
+    $("#eventblock10").val("");
+})
+$("#save-delete11").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour11");
+    $("#eventblock11").val("");
+})
+$("#save-delete12").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour12");
+    $("#eventblock12").val("");
+})
+$("#save-delete13").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour13");
+    $("#eventblock13").val("");
+})
+$("#save-delete14").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour14");
+    $("#eventblock14").val("");
+})
+$("#save-delete15").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour15");
+    $("#eventblock15").val("");
+})
+$("#save-delete16").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour16");
+    $("#eventblock16").val("");
+})
