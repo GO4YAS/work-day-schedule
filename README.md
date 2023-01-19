@@ -1,7 +1,10 @@
 # Work Day Schedule
 
 ## Build
-
+  - HTML
+  - CSS
+  - JAVASCRIPT
+  
 ## Site URL
 https://go4yas.github.io/work-day-schedule/
 ## ScreenShot
